@@ -1,0 +1,21 @@
+{
+  "test_loss": 0.7512812614440918,
+  "test_accuracy": 0.7647438049316406,
+  "train_images": 12412,
+  "test_images": 3103,
+  "classes": [
+    "battery",
+    "biological",
+    "brown-glass",
+    "cardboard",
+    "clothes",
+    "green-glass",
+    "metal",
+    "paper",
+    "plastic",
+    "shoes",
+    "trash",
+    "white-glass"
+  ],
+  "image_size": 64
+}

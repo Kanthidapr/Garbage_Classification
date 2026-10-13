@@ -1,0 +1,13 @@
+class,total_images,train_images,test_images
+battery,945,756,189
+biological,985,788,197
+brown-glass,607,485,122
+cardboard,891,713,178
+clothes,5325,4260,1065
+green-glass,629,503,126
+metal,769,615,154
+paper,1050,840,210
+plastic,865,692,173
+shoes,1977,1582,395
+trash,697,558,139
+white-glass,775,620,155

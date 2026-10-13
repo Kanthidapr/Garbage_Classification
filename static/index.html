@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garbage Classification — CNN</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="container">
+  <header>
+    <h1>Garbage Classification — CNN</h1>
+    <p>CNN Image Classification System</p>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><span>Test Accuracy</span><strong id="accuracy">-</strong></div>
+    <div class="stat"><span>Garbage Classes</span><strong id="class-count">12</strong></div>
+    <div class="stat"><span>Input Image Size</span><strong id="image-size">64 × 64</strong></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Upload Image</h2>
+      <label class="upload-box" for="image-input">
+        <input id="image-input" type="file" accept="image/*">
+        <img id="preview" alt="Preview">
+        <div id="upload-text">Click to upload an image</div>
+      </label>
+
+      <label class="label" for="actual-class">Actual Class (สำหรับตรวจว่าถูก/ผิด)</label>
+      <select id="actual-class">
+        <option value="">-- เลือกประเภทขยะ --</option>
+      </select>
+
+      <button id="predict-button">Predict</button>
+      <div id="status" class="status">ยังไม่ได้ตรวจสอบ</div>
+    </div>
+
+    <div class="card">
+      <h2>Top 5 Predictions</h2>
+      <div id="result" class="result">Upload an image and click Predict</div>
+      <div id="prediction-list"></div>
+    </div>
+  </section>
+</main>
+<script src="/static/script.js"></script>
+</body>
+</html>
