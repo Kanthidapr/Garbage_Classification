@@ -1,4 +1,6 @@
 {
+  "model_name": "Garbage Classification CNN",
+  "model_type": "CNN",
   "classes": [
     "battery",
     "biological",
@@ -13,6 +15,13 @@
     "trash",
     "white-glass"
   ],
+  "num_classes": 12,
   "image_size": 64,
-  "test_accuracy": 0.7647438049316406
+  "color_mode": "RGB",
+  "normalization": "pixel_values_divided_by_255",
+  "test_accuracy": 0.7441185712814331,
+  "test_loss": 0.8740261793136597,
+  "dataset": "mostafaabla/garbage-classification",
+  "dataset_url": "https://www.kaggle.com/datasets/mostafaabla/garbage-classification/data",
+  "random_seed": 42
 }
