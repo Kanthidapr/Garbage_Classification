@@ -161,11 +161,9 @@ Endpoint อื่น: `GET /health` ตรวจสถานะแอปแล�
 ```text
 garbage_classification_project/
 ├── garbage_classification_cnn.ipynb  # notebook: สำรวจข้อมูล → แบ่งข้อมูล → ฝึก → ประเมิน → บันทึกโมเดล
-├── app.py              # FastAPI: เสิร์ฟหน้าเว็บ + endpoint /predict /health /info
+├── app.py              # Gradio: เสิร์ฟหน้าเว็บ + endpoint /predict /health /info
 ├── requirements.txt    # แพ็กเกจที่ต้องใช้
 ├── render.yaml         # ตั้งค่า deploy บน Render
-├── static/             # หน้าเว็บ (index.html, script.js, style.css)
-├── data/               # ที่ใส่ชุดข้อมูล (ดูรายละเอียดใน data/README.txt)
 └── model/              # trash_class_cnn_mvp.keras และ metadata.json (สร้างโดย notebook)
 ```
 
@@ -173,10 +171,10 @@ garbage_classification_project/
 
 1. ฝึกโมเดลใน notebook ก่อน แล้ว push โค้ดพร้อมโฟลเดอร์ `model/` (ไฟล์ `.keras` และ `metadata.json`) ขึ้น GitHub
 2. Render → New → Web Service → เลือก repository
-3. Build: `pip install -r requirements.txt` / Start: `uvicorn app:app --host 0.0.0.0 --port $PORT` (ตั้งไว้ใน `render.yaml` แล้ว)
+3. Build: `pip install -r requirements.txt` / Start: `python app.py`
 4. ตรวจสอบ `/health` ว่า `model_loaded` เป็น `true` (ตรวจแล้ว: https://garbage-classification-m9ti.onrender.com/health ตอบ `status: ok`, `model_loaded: true`, 12 classes)
 
-## 8. ผู้จัดทำ (เรียงตามรหัสนิสิตน้อยไปมาก)
+## 8. ผู้จัดทำ
 
 | ลำดับ | รหัสนิสิต | ชื่อ-นามสกุล |
 |---|---|---|
