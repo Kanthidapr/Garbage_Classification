@@ -104,7 +104,7 @@ Adam, sparse categorical cross-entropy, batch 32, สูงสุด 20 epochs �
 ## 4. ติดตั้งแพ็กเกจและรันแอปบนเครื่อง
 
 ```bash
-git clone <repo-url>
+git clone <[repo-url](https://github.com/Kanthidapr/Garbage_Classification)>
 cd garbage_classification_project
 
 python -m venv .venv
